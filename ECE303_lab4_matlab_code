@@ -1,0 +1,19 @@
+close all;clear all; clc
+%%set up comm
+arduino = serialport("COM3", 9600, "Timeout", 15)
+pause(1);
+x = [0:255];
+flush(arduino);
+writeline(arduino,"Matlab ready");	
+while readline(arduino) ~= "arduino ready"
+end	
+a=readline(arduino)
+flush(arduino);
+delete(arduino);
+clear arduino;
+% figure
+% plot((x/255)*100, y*5/1023, 'bo', 'MarkerFaceColor', 'blue')
+% grid on 
+% xlabel('Duty Cycle (%)')
+% ylabel('Output Voltage')
+

@@ -1,0 +1,33 @@
+/*
+ ECE303 Lab3 Practice 
+ 
+*/
+
+
+ int LED_pin = 6;
+ void setup() {
+
+  pinMode(6,OUTPUT);
+  Serial.begin(9600);
+  //while (! Serial);
+//  Serial.setTimeout(5);   
+//  Serial.println("percent of total intensity ");
+//  Serial.println("");
+
+ }
+ void loop(){
+   /* float increment = .05;
+   int number_iterations = float(1)/float(increment);    
+   String percent_intensity = "";
+   while(Serial.available == 0){
+     
+   }   
+  for (int i = 1; i < number_iterations; i++) {   
+    float intensity = float(257)*(float(.05)*float(i));   
+    analogWrite(LED_pin, intensity);
+  percent_intensity = percent_intensity + "," + (float(.05)*float(i));
+    delay(500);
+  } 
+  Serial.println("arduino ready");
+  Serial.println(percent_intensity); */
+ }
